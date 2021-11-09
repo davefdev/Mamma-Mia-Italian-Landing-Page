@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #2d3235;
+}
+
+/************** HEADER **************/
+
+header {
+  height: 100vh;
+  width: 100%;
+  background: #2d3235;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.navbar {
+  width: 100%;
+  height: 16vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-logo {
+  width: 5rem;
+  cursor: pointer;
+  padding-top: 1.25rem;
+}
+
+.navbar .nav {
+  flex: 1;
+  padding-left: 16rem;
+}
+
+.navbar .nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 1.25rem;
+}
+
+.navbar .nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease 0s;
+}
+
+.navbar .nav ul li a:hover {
+  color: #11a14d;
+  font-weight: bold;
+}
+
+.navbar button {
+  color: #f6f6f6;
+  padding: 0.65rem 1.6rem 0.65rem 1.6rem;
+  background: #11a14d;
+  border: 0;
+  margin-right: 4rem;
+  border-radius: 1rem;
+}
+
+.navbar button:hover {
+  background: #11a14d;
+  transition: 0.5s;
+}
+
+.navbar #cart {
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+.content {
+  margin-left: 12%;
+  margin-top: 12%;
+}
+
+.content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: lightgrey;
+}
+
+.content p {
+  font-size: 1rem;
+  color: white;
+}
+
+span {
+  color: #11a14d;
+}
+
+.main-img {
+  position: absolute;
+  bottom: 7rem;
+  right: 7rem;
+  animation: 1.5s main infinite alternate;
+}
+
+@keyframes main {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.sidebar {
+  position: absolute;
+  right: 1.5rem;
+  top: 21rem;
+}
+
+.sidebar div {
+  width: 1rem;
+  height: 1rem;
+  list-style: none;
+  background: #bfbfbf;
+  break-after: 50%;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.sidebar .active {
+  background: lightgray;
+}
+
+.page-down {
+  position: absolute;
+  bottom: 1.25rem;
+  text-align: center;
+  width: 88%;
+}
+
+.page-down .down-btn {
+  width: 3.25rem;
+  animation: mover 1.5s infinite alternate;
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translate(0.75rem);
+  }
+}
+
+/************** FOOTER **************/
+
+.footer {
+  background: rgb(255, 187, 0, 1);
+  height: 100%;
+}
+
+.footer .column-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 3fr));
+  gap: 0.5rem;
+  margin-left: 25rem;
+  margin-right: 25rem;
+  height: 18rem;
+}
+
+.footer .column {
+  margin-top: 1rem;
+}
+.footer .column-container .column h3 {
+  font-size: 1.5rem;
+  color: #222;
+  padding: 1rem 0;
+}
+
+.footer .column-container .column p {
+  font-size: 1.1rem;
+  color: rgb(80, 79, 79);
+  padding-bottom: 0.5rem;
+}
+
+.footer .column-container .column a {
+  font-size: 1.1rem;
+  color: rgb(80, 79, 79);
+  padding: 0.3rem 0;
+  display: block;
+}
+
+.footer .column-container .column a:hover {
+  color: rgb(119, 119, 119);
+  transition: all 0.3s ease 0s;
+}
+
+.footer .column-container .column a:hover i {
+  color: rgb(119, 119, 119);
+  padding-right: 2rem;
+  transition: all 0.3s ease 0s;
+}
+
+.footer .column-container .column a i {
+  padding-right: 0.5rem;
+  color: #222;
+}
+
+.footer .column-container .column form input[type="email"] {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  font-size: 1.1rem;
+  color: rgb(80, 79, 79);
+  margin: 1rem 0;
+  text-transform: none;
+}
+
+.footer .column-container .column .payment {
+  width: 100%;
+  margin-top: 2rem;
+}

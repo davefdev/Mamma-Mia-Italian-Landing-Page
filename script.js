@@ -35,3 +35,4 @@ function animation() {
     b.classList.remove("active");
   }
 }
+

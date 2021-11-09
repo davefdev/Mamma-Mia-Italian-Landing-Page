@@ -28,6 +28,7 @@ btn[7].onclick = function () {
 
 function animation() {
   mainImg.classList.add("zoom");
+  
   setTimeout(function () {
     mainImg.classList.remove("zoom");
   }, 600);
